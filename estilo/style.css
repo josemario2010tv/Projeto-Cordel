@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+:root{
+    --fonte1: 'Courier New', Courier, monospace;
+    --fonte2: 'Corinthia', cursive;
+    --fontte3: 'Corinthia', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+   font-variant: small-caps;
+   font-family: var(--fonte2);
+   font-size: 10vw; /*colocando vw ele se adapata conforme o tamanho da tela mantendo o titulo grande*/
+
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;  /* espaço do conteudo para o topo do espaço */
+    padding-bottom: 10vh; /* espaço do conteudo para a parte de baixo do espaço */
+    line-height: 2em; /* espaço entre as linhas escritas */
+    padding-left: 30px; /*margem do canto da pagina */
+    font-family: var(--fontte2);
+    font-size: 3vw;
+    letter-spacing: 5px;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(160, 157, 157);
+    color: white ;
+    background-color: rgba(0, 0, 0, 0.158);
+box-shadow: inset 6px 6px 13px black;
+background-attachment: fixed; /*efeito parallax*/
+}
+
+section#img01{
+background-image: url(../imagens/background001.jpg);
+background-position: right center;
+background-size: cover;
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section.imagem > p /* para selecionar paragrafo dentro da clase imagem da sessão */{
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
